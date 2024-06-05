@@ -7,13 +7,24 @@ import { RouterLink } from 'vue-router'
     <div class="login-container uk-width-1-1">
       <div class="login-wrapper uk-width-1-1">
         <div class="panel-head">
-          <h2 class="heading-title">Đăng nhập</h2>
+          <h2 class="heading-title">Đăng ký</h2>
           <div class="description">
             Chào mừng bạn đến với hệ thống <br />
             <span> VUE SYSTEM </span>
           </div>
         </div>
         <div class="panel-body">
+          <div class="form-row mb-20">
+            <div class="label">Tên đăng nhập:</div>
+            <input
+              type="text"
+              name="name"
+              value=""
+              class="input-text"
+              autocomplete="off"
+              placeholder="Vui lòng nhập tên đăng nhập..."
+            />
+          </div>
           <div class="form-row mb-20">
             <div class="label">Email:</div>
             <input
@@ -29,7 +40,6 @@ import { RouterLink } from 'vue-router'
             <div class="label">
               <div class="uk-flex uk-flex-between">
                 <span>Mật khẩu:</span>
-                <a href="" title="" class="forgot">Quên mật khẩu?</a>
               </div>
             </div>
             <input
@@ -43,24 +53,12 @@ import { RouterLink } from 'vue-router'
           </div>
           <div class="form-row mb-20">
             <div class="uk-flex uk-flex-between">
-              <div class="forgot-wrapper">
-                <input
-                  type="checkbox"
-                  name="remember"
-                  id="forgot-password"
-                  value=""
-                  class="input-checkbox"
-                  autocomplete="off"
-                />
-                <label for="forgot-password">Ghi nhớ mật khẩu</label>
-              </div>
-              <RouterLink to="/register">Đăng ký?</RouterLink>
+              <RouterLink to="/admin">Quay về trang đăng nhập?</RouterLink>
             </div>
           </div>
           <div class="form-row mb-5">
-            <div class="uk-button btn-login">Đăng nhập</div>
+            <div class="uk-button btn-login">Đăng ký</div>
           </div>
-          <div class="panel-foot">copyright khaquy1611@gmail.com</div>
         </div>
       </div>
     </div>
